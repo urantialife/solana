@@ -442,6 +442,8 @@ fn test_cli_program_deploy_with_authority() {
     config.command = CliCommand::Program(ProgramCliCommand::Show {
         account_pubkey: Some(program_pubkey),
         authority_pubkey: keypair.pubkey(),
+        get_programs: false,
+        get_buffers: false,
         all: false,
         use_lamports_unit: false,
     });
@@ -533,6 +535,8 @@ fn test_cli_program_deploy_with_authority() {
     config.command = CliCommand::Program(ProgramCliCommand::Show {
         account_pubkey: Some(program_pubkey),
         authority_pubkey: keypair.pubkey(),
+        get_programs: false,
+        get_buffers: false,
         all: false,
         use_lamports_unit: false,
     });
@@ -666,6 +670,8 @@ fn test_cli_program_write_buffer() {
     config.command = CliCommand::Program(ProgramCliCommand::Show {
         account_pubkey: Some(buffer_keypair.pubkey()),
         authority_pubkey: keypair.pubkey(),
+        get_programs: false,
+        get_buffers: false,
         all: false,
         use_lamports_unit: false,
     });
@@ -759,6 +765,8 @@ fn test_cli_program_write_buffer() {
     config.command = CliCommand::Program(ProgramCliCommand::Show {
         account_pubkey: Some(buffer_pubkey),
         authority_pubkey: keypair.pubkey(),
+        get_programs: false,
+        get_buffers: false,
         all: false,
         use_lamports_unit: false,
     });
@@ -1095,6 +1103,8 @@ fn test_cli_program_show() {
     config.command = CliCommand::Program(ProgramCliCommand::Show {
         account_pubkey: Some(buffer_keypair.pubkey()),
         authority_pubkey: keypair.pubkey(),
+        get_programs: false,
+        get_buffers: false,
         all: false,
         use_lamports_unit: false,
     });
@@ -1155,6 +1165,8 @@ fn test_cli_program_show() {
     config.command = CliCommand::Program(ProgramCliCommand::Show {
         account_pubkey: Some(program_keypair.pubkey()),
         authority_pubkey: keypair.pubkey(),
+        get_programs: false,
+        get_buffers: false,
         all: false,
         use_lamports_unit: false,
     });
